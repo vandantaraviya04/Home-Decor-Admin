@@ -1,0 +1,5 @@
+/*    /index.html   200
+
+# This rule tells hosting providers like Netlify to show your index.html file
+# for any page the user visits. This is necessary for single-page app
+# routing to work correctly.
