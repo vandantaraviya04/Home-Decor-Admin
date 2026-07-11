@@ -182,7 +182,7 @@ export default function OrdersListView() {
                     <Typography variant="body2">{order.items.length} item{order.items.length > 1 ? 's' : ''}</Typography>
                   </TableCell>
                   <TableCell align="right">
-                    <Typography variant="subtitle2">£{order.totalAmount.toFixed(2)}</Typography>
+                    <Typography variant="subtitle2">₹{order.totalAmount.toFixed(2)}</Typography>
                   </TableCell>
                   <TableCell>
                     <Label color={ORDER_STATUS_COLOR[order.orderStatus]} variant="soft">

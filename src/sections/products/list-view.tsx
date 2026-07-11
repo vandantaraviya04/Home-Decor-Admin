@@ -202,7 +202,7 @@ export default function ProductsListView() {
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="subtitle2">
-                      £{product.price.toFixed(2)}
+                      ₹{product.price.toFixed(2)}
                     </Typography>
                   </TableCell>
                   <TableCell align="right">

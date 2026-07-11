@@ -160,7 +160,7 @@ export default function CustomersListView() {
                   </TableCell>
                   <TableCell align="right">
                     <Typography variant="subtitle2" sx={{ color: 'primary.main' }}>
-                      £{customer.totalSpent.toLocaleString('en-GB', { minimumFractionDigits: 2 })}
+                      ₹{customer.totalSpent.toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                     </Typography>
                   </TableCell>
                   <TableCell>

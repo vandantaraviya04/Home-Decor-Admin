@@ -140,7 +140,7 @@ export default function CustomerDetailsView({ customerId }: { customerId: string
                   <StatRow
                     icon="solar:dollar-minimalistic-bold-duotone"
                     label="Total Spent"
-                    value={`£${customer.totalSpent.toLocaleString('en-GB', { minimumFractionDigits: 2 })}`}
+                    value={`₹${customer.totalSpent.toLocaleString('en-IN', { minimumFractionDigits: 2 })}`}
                     color={theme.vars.palette.success.main}
                   />
                   <StatRow
@@ -192,7 +192,7 @@ export default function CustomerDetailsView({ customerId }: { customerId: string
                         <Typography variant="body2">{order.orderDate}</Typography>
                       </TableCell>
                       <TableCell align="right">
-                        <Typography variant="subtitle2">£{order.totalAmount.toFixed(2)}</Typography>
+                        <Typography variant="subtitle2">₹{order.totalAmount.toFixed(2)}</Typography>
                       </TableCell>
                       <TableCell>
                         <Label color={PAYMENT_STATUS_COLOR[order.paymentStatus]} variant="soft">

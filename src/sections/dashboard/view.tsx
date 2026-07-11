@@ -27,7 +27,7 @@ import { ORDERS, CUSTOMERS, PRODUCTS, DASHBOARD_STATS, SALES_DATA } from 'src/_m
 const STAT_CARDS = [
   {
     title: 'Total Revenue',
-    value: `£${DASHBOARD_STATS.totalRevenue.toLocaleString('en-GB', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
+    value: `₹${DASHBOARD_STATS.totalRevenue.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}`,
     icon: 'solar:dollar-minimalistic-bold-duotone',
     color: 'primary',
     change: '+12.5%',
@@ -124,9 +124,9 @@ export default function DashboardView() {
                   </defs>
                   <CartesianGrid strokeDasharray="3 3" stroke={theme.vars.palette.divider} />
                   <XAxis dataKey="month" tick={{ fontSize: 12, fill: theme.vars.palette.text.secondary }} />
-                  <YAxis tick={{ fontSize: 12, fill: theme.vars.palette.text.secondary }} tickFormatter={(v) => `£${v}`} />
+                  <YAxis tick={{ fontSize: 12, fill: theme.vars.palette.text.secondary }} tickFormatter={(v) => `₹${v}`} />
                   <Tooltip
-                    formatter={(value) => [`£${value}`, 'Revenue']}
+                    formatter={(value) => [`₹${value}`, 'Revenue']}
                     contentStyle={{
                       borderRadius: 8,
                       border: 'none',
@@ -236,7 +236,7 @@ export default function DashboardView() {
                       </Box>
                       <Box component="td" sx={{ px: 2, py: 1.5 }}>
                         <Typography variant="body2" sx={{ fontWeight: 600 }}>
-                          £{order.totalAmount.toFixed(2)}
+                          ₹{order.totalAmount.toFixed(2)}
                         </Typography>
                       </Box>
                       <Box component="td" sx={{ px: 2, py: 1.5 }}>
@@ -292,7 +292,7 @@ export default function DashboardView() {
                     </Box>
                     <Box sx={{ textAlign: 'right', flexShrink: 0 }}>
                       <Typography variant="subtitle2" sx={{ color: 'primary.main' }}>
-                        £{customer.totalSpent.toLocaleString('en-GB', { minimumFractionDigits: 2 })}
+                        ₹{customer.totalSpent.toLocaleString('en-IN', { minimumFractionDigits: 2 })}
                       </Typography>
                       <Typography variant="caption" sx={{ color: 'text.secondary' }}>
                         {customer.totalOrders} orders

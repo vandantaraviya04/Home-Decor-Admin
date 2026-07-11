@@ -1,7 +1,7 @@
 // Stub locales - simplified for Home Decor Admin
 
 export const allLangs = [
-  { label: 'English', value: 'en', countryCode: 'GB', numberFormat: { code: 'en-US', currency: 'USD' } },
+  { label: 'English', value: 'en', countryCode: 'IN', numberFormat: { code: 'en-IN', currency: 'INR' } },
 ];
 
 export function useTranslate() {

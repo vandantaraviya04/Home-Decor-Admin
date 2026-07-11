@@ -118,9 +118,9 @@ export default function OrderDetailsView({ orderId }: { orderId: string }) {
                         </Box>
                       </TableCell>
                       <TableCell align="center">{item.quantity}</TableCell>
-                      <TableCell align="right">£{item.price.toFixed(2)}</TableCell>
+                      <TableCell align="right">₹{item.price.toFixed(2)}</TableCell>
                       <TableCell align="right">
-                        <Typography variant="subtitle2">£{(item.price * item.quantity).toFixed(2)}</Typography>
+                        <Typography variant="subtitle2">₹{(item.price * item.quantity).toFixed(2)}</Typography>
                       </TableCell>
                     </TableRow>
                   ))}
@@ -132,7 +132,7 @@ export default function OrderDetailsView({ orderId }: { orderId: string }) {
               <Stack spacing={1.5}>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                   <Typography variant="body2" sx={{ color: 'text.secondary' }}>Subtotal</Typography>
-                  <Typography variant="body2">£{order.totalAmount.toFixed(2)}</Typography>
+                  <Typography variant="body2">₹{order.totalAmount.toFixed(2)}</Typography>
                 </Box>
                 <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                   <Typography variant="body2" sx={{ color: 'text.secondary' }}>Shipping</Typography>
@@ -142,7 +142,7 @@ export default function OrderDetailsView({ orderId }: { orderId: string }) {
                 <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
                   <Typography variant="subtitle1" sx={{ fontWeight: 700 }}>Total</Typography>
                   <Typography variant="subtitle1" sx={{ fontWeight: 700, color: 'primary.main' }}>
-                    £{order.totalAmount.toFixed(2)}
+                    ₹{order.totalAmount.toFixed(2)}
                   </Typography>
                 </Box>
               </Stack>
@@ -213,7 +213,7 @@ export default function OrderDetailsView({ orderId }: { orderId: string }) {
                   <Divider />
                   <InfoRow
                     label="Total Amount"
-                    value={<Typography variant="subtitle2" sx={{ color: 'primary.main' }}>£{order.totalAmount.toFixed(2)}</Typography>}
+                    value={<Typography variant="subtitle2" sx={{ color: 'primary.main' }}>₹{order.totalAmount.toFixed(2)}</Typography>}
                     bold
                   />
                 </Stack>

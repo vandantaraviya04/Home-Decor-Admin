@@ -166,7 +166,7 @@ export default function ProductFormView({ productId }: { productId?: string }) {
                   <Grid item xs={12} sm={6}>
                     <TextField
                       fullWidth
-                      label="Price (£)"
+                      label="Price (₹)"
                       type="number"
                       inputProps={{ step: '0.01', min: '0' }}
                       {...register('price')}
